@@ -2,7 +2,7 @@
 
 return [
     '__name' => 'admin-stream-audio',
-    '__version' => '0.0.1',
+    '__version' => '0.1.0',
     '__git' => 'git@github.com:getmim/admin-stream-audio.git',
     '__license' => 'MIT',
     '__author' => [
@@ -92,6 +92,24 @@ return [
                 'url' => [
                     'label' => 'Audio URL',
                     'type' => 'url',
+                    'rules' => []
+                ],
+                'curr_cover' => [
+                    'label' => 'Playing Cover',
+                    'type' => 'image',
+                    'form' => 'std-image',
+                    'rules' => [
+                        'upload' => TRUE
+                    ]
+                ],
+                'curr_artist' => [
+                    'label' => 'Playing Artist',
+                    'type' => 'text',
+                    'rules' => []
+                ],
+                'curr_song' => [
+                    'label' => 'Playing Song',
+                    'type' => 'text',
                     'rules' => []
                 ],
                 'meta-schema' => [
